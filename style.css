@@ -6,7 +6,6 @@
 
 a {
   text-decoration: none;
-  color: #fff;
 }
 
 body {
@@ -23,17 +22,33 @@ body {
   align-items: center;
 }
 
-svg {
-  width: 40px;
-  height: 40px;
-  fill: currentColor;
+body.dark-theme .wrapper {
+  background: url(./assets/bg-dark-mode.png);
+}
+
+body.light-theme .wrapper {
+  background: url(./assets/bg-light-mode.png);
+  color: #000;
+}
+
+body.dark-theme a {
+  color: #fff;
+}
+
+body.light-theme a {
+  color: #000;
+}
+
+body.light-theme .links a {
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
 }
 
 .wrapper {
   width: 100%;
   max-width: 360px;
   height: 800px;
-  background: url(./assets/bg-darkmode.png);
 }
 
 .profile {
@@ -149,7 +164,6 @@ footer {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.5rem;
-  color: #FFFFFF;
 }
 
 footer p a {
